@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flags.ShowFlags"
+             Title="ShowFlags">
+    <ScrollView WidthRequest="600">
+        <VerticalStackLayout>
+            <Label/>
+            <Label
+            Text="France"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+            <Grid ColumnDefinitions="*,*,*" HeightRequest="400">
+                <BoxView BackgroundColor="Blue" Grid.Column="0"/>
+                <BoxView BackgroundColor="White" Grid.Column="1"/>
+                <BoxView BackgroundColor="red" Grid.Column="2"/>
+            </Grid>
+
+            <Label
+            Text="Germany"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+            <Grid RowDefinitions="*,*,*" HeightRequest="400" >
+                <BoxView BackgroundColor="Black" Grid.Row="0"/>
+                <BoxView BackgroundColor="Red" Grid.Row="1"/>
+                <BoxView BackgroundColor="Yellow" Grid.Row="2"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
